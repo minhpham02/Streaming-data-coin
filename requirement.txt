@@ -1,0 +1,6 @@
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --topic bitcoin-price-topic
+.\bin\windows\kafka-topics.bat --bootstrap-server localhost:9092 --delete --topic bitcoin-price-topic
+c:/kafka/kafka-logs
+c:/kafka/zookeeper-data
